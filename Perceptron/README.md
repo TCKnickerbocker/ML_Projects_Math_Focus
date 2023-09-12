@@ -1,0 +1,1 @@
+A simple perceptron algorithm run on matlab data to produce an optimal partitioning line between points, when one exists.

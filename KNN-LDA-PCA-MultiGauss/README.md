@@ -1,0 +1,1 @@
+A series of probelms involving the implementation of PCA, LDA, and KNN on a set of training and testing data values representing pixels 
