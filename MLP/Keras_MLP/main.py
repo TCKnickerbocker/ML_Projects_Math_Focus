@@ -17,7 +17,7 @@ num_classes = 10
 img_rows, img_cols = 8, 8  # input image dimensions
 
 # Load & normalize data
-x_train, y_train, x_valid, y_valid, x_test, y_test = ReadNormalizedOptdigitsDataset('./Data/optdigits_train.txt', './Data/optdigits_valid.txt', './Data/optdigits_test.txt')
+x_train, y_train, x_valid, y_valid, x_test, y_test = ReadNormalizedOptdigitsDataset('../Data/optdigits_train.txt', '../Data/optdigits_valid.txt', '../Data/optdigits_test.txt')
 
 # Convert data format to channel last format
 x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)

@@ -13,7 +13,7 @@ Hs = [3, 6, 9, 12, 15, 18]
 for i, num_hid in enumerate(Hs):
     # call model update based on training data, record best val accuracy
     print(f"Running with H={num_hid}")
-    trainAcc, validAcc, Z, W, V = MLPtrain("./Data/optdigits_train.txt", "./Data/optdigits_test.txt", num_hid, 10)
+    trainAcc, validAcc, Z, W, V = MLPtrain("../Data/optdigits_train.txt", "../Data/optdigits_test.txt", num_hid, 10)
     trainErrs.append(trainAcc)
     validErrs.append(validAcc)
     Ws.append(W)
@@ -38,5 +38,5 @@ bestV = Vs[bestInd]
 print(f"Best number of hidden units (we will test using this number): {bestH}")
 
 # Run best model on test data
-predictions = MLPtest("./Data/optdigits_train.txt", bestW, bestV)
+predictions = MLPtest("../Data/optdigits_train.txt", bestW, bestV)
 

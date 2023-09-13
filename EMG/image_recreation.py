@@ -7,7 +7,7 @@ from skimage import io
 from EMG import EMG
 
 # Load and preprocess the image
-img = io.imread('./TCF_Bank_Stadium.jpg')
+img = io.imread('./Input_Images/TCF_Bank_Stadium.jpg')
 img = img / 255
 img_shape = img.shape
 img = img.reshape(-1, 3)
@@ -28,7 +28,7 @@ for i, k in enumerate(k_values):
     axs[i].set_title('K=' + str(k))
 
 # Save the fig, create log-like subplot curves
-fig.savefig('./Q2_2b_1.png')
+fig.savefig('./Output_Images/myStadium.png')
 fig, axs = plt.subplots(len(k_values), 1, figsize=(10, 5))
 
 for i, k in enumerate(k_values):
@@ -45,4 +45,4 @@ for i, k in enumerate(k_values):
     axs[i].set_title('K=' + str(k))
 
 # Save the figure 
-fig.savefig('./myStadium.png')
+fig.savefig('./Output_Images/myStadium_logLike.png')
