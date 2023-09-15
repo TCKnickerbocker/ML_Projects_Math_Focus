@@ -1,5 +1,5 @@
 # Multi-Layer Perceptron (MLP) Project
-
+<hr>
 ## Overview
 This project contains code for creating, training, and testing a Multi-Layer Perceptron (MLP) neural network on the Optdigits dataset.  
 
